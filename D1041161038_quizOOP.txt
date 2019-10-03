@@ -1,0 +1,67 @@
+1. Modifier
+	a. private static final String LOG_TAG
+            = SecondActivity.class.getSimpleName();
+	b. public static final String EXTRA_REPLY =
+            "com.example.android.twoactivities.extra.REPLY";
+	c. protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_second);
+
+2. Method
+	a. protected void onPause() {
+        	super.onPause();
+       	 	Log.d(LOG_TAG, "onPause");
+           }
+	b. protected void onRestart() {
+        	super.onRestart();
+        	Log.d(LOG_TAG, "onRestart");
+    	   }
+	c. protected void onResume() {
+        	super.onResume();
+        	Log.d(LOG_TAG, "onResume");
+    	   }
+	d. protected void onDestroy() {
+        	super.onDestroy();
+        	Log.d(LOG_TAG, "onDestroy");
+    	   }
+
+3. Class
+	a. public class SecondActivity extends AppCompatActivity {
+	b. public class MainActivity extends AppCompatActivity {
+
+4. Function
+	a. protected void onPause() {
+        	super.onPause();
+       	 	Log.d(LOG_TAG, "onPause");
+           }
+	b. protected void onRestart() {
+        	super.onRestart();
+        	Log.d(LOG_TAG, "onRestart");
+    	   }
+	c. protected void onResume() {
+        	super.onResume();
+        	Log.d(LOG_TAG, "onResume");
+    	   } 
+	
+5. Constructor
+	a. public class SecondActivity extends AppCompatActivity {
+    		// Class name for Log tag.
+    		private static final String LOG_TAG
+            		= SecondActivity.class.getSimpleName();
+	b. public class MainActivity extends AppCompatActivity {
+    		// Class name for Log tag
+    		private static final String LOG_TAG = MainActivity.class.getSimpleName();
+
+6. Polimorfisme
+	a. mMessageEditText = findViewById(R.id.editText_main); 
+	b. mReplyHeadTextView = findViewById(R.id.text_header_reply);
+	c. mReplyTextView = findViewById(R.id.text_message_reply);
+
+7. Inheritance
+	a. public class MainActivity extends AppCompatActivity {
+	b. public class SecondActivity extends AppCompatActivity {
+	c. package inheritance;
+
+	   public class Persegi extends BangunDatar {
+           	float sisi;   
+   	   }
